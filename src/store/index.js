@@ -8,8 +8,7 @@ import persistReducers from './persistReducers';
 
 const middlewares = [];
 
-const sagaMonitor =
-  __DEV__ === 'development' ? console.tron.createSagaMonitor() : null;
+const sagaMonitor = __DEV__ === true ? console.tron.createSagaMonitor() : null;
 
 const sagaMiddleware = createSagaMiddleware({ sagaMonitor });
 
