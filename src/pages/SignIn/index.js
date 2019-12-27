@@ -56,5 +56,5 @@ export default function SignIn({ navigation }) {
 }
 
 SignIn.propTypes = {
-  navigation: PropTypes.oneOfType(PropTypes.object).isRequired,
+  navigation: PropTypes.func.isRequired,
 };
