@@ -46,6 +46,7 @@ export function* signUp({ payload }) {
 
     yield call(api.post, 'users', { name, email, password });
 
+    Alert.alert('Cadastro realizado', 'Cadastro realizado com sucesso!');
     // history.push('/');
   } catch (error) {
     Alert.alert(
